@@ -53,38 +53,39 @@ export default function CareerSection() {
           </div>
 
           {/* Right Visual Stats */}
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-5 flex items-center justify-center">
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              className="p-12 organic-blob bg-gradient-to-br from-govt-gold/20 to-transparent border border-govt-gold/10 relative overflow-hidden group"
+              className="relative w-full max-w-sm aspect-square"
             >
-              <div className="relative z-10">
-                 <span className="text-[10px] font-black text-govt-gold uppercase tracking-[0.3em] mb-4 block">Package Potential</span>
-                 <h4 className="text-5xl md:text-6xl font-display font-black text-white mb-10 tracking-tighter italic">₹8L – ₹40L+</h4>
+              {/* Animated Blob Background */}
+              <div className="absolute inset-0 organic-blob bg-gradient-to-br from-cyan-500/10 via-transparent to-transparent border-2 border-cyan-400/40 opacity-80" />
+              
+              <div className="relative z-10 h-full flex flex-col items-center justify-center p-12 text-center">
+                 <span className="text-xs font-black text-cyber-muted uppercase tracking-[0.2em] mb-6 block opacity-90">Age Potential</span>
                  
-                 <div className="space-y-4 mb-10">
-                    <div className="h-2 w-full bg-cyber-black/50 rounded-full overflow-hidden">
-                       <motion.div 
-                          initial={{ width: 0 }}
-                          whileInView={{ width: '85%' }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1.5 }}
-                          className="h-full bg-govt-gold cyber-line-glow"
-                       />
+                 <h4 className="text-6xl md:text-7xl font-display font-black text-white mb-12 tracking-tighter italic leading-none">
+                    ₹8L – ₹40L+
+                 </h4>
+                 
+                 {/* Entry to Expert Scale */}
+                 <div className="flex justify-between w-full px-4 mb-16">
+                    <div className="text-left">
+                       <p className="text-xs font-black uppercase text-cyber-muted tracking-widest">ENTRY</p>
                     </div>
-                    <div className="flex justify-between text-[10px] font-black uppercase text-cyber-muted tracking-widest leading-none">
-                       <span>Entry</span>
-                       <span>Expert</span>
+                    <div className="text-right">
+                       <p className="text-xs font-black uppercase text-cyber-muted tracking-widest">EXPERT</p>
                     </div>
                  </div>
 
-                 <div className="flex items-center gap-6 p-6 glass-morph organic-blob">
-                    <Briefcase className="text-govt-gold" size={24} />
+                 {/* Open Jobs Stat */}
+                 <div className="flex flex-col items-center gap-3">
+                    <Briefcase className="text-govt-gold" size={32} />
                     <div>
-                       <p className="text-xl font-display font-black text-white leading-none">3.5M+</p>
-                       <p className="text-[10px] font-black text-cyber-muted uppercase">Open Jobs Globally</p>
+                       <p className="text-2xl font-display font-black text-white leading-none">3.5M+</p>
+                       <p className="text-xs font-black text-cyber-muted uppercase tracking-wide mt-2">Open Jobs Globally</p>
                     </div>
                  </div>
               </div>
