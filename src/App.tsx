@@ -10,7 +10,6 @@ import AudienceSection from './components/AudienceSection';
 import CareerSection from './components/CareerSection';
 import LiveTicker from './components/LiveTicker';
 import { RegistrationCTA, Footer } from './components/FinalSections';
-import { Shield } from 'lucide-react';
 import { LanguageProvider } from './lib/LanguageContext';
 import DynamicBackground from './components/effects/DynamicBackground';
 import CustomCursor from './components/effects/CustomCursor';
