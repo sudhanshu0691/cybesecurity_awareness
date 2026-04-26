@@ -25,7 +25,7 @@ export default function SpeakerSection() {
               
               <div className="relative organic-blob overflow-hidden bg-cyber-dark p-2">
                 <img 
-                  src="/Amit_dubey.jpg" 
+                  src={`${import.meta.env.BASE_URL}Amit_dubey.jpg`}
                   alt="Amit Dubey"
                   className="w-full h-full object-cover organic-blob grayscale group-hover:grayscale-0 transition-all duration-700"
                 />

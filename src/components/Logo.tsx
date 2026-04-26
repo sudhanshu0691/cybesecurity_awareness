@@ -22,8 +22,8 @@ const Logo: React.FC<LogoProps> = ({
 
   const glowClass = showGlow ? 'neon-glow' : '';
   
-  // Using local logo from public folder
-  const logoUrl = "/iiesp-logo.png";
+  // Using local logo from public folder with proper base path for GitHub Pages
+  const logoUrl = `${import.meta.env.BASE_URL}iiesp-logo.png`;
 
   return (
     <div className={`${sizeClasses[size]} rounded-full overflow-hidden ${glowClass} ${wrapperClassName} ${className}`}>
