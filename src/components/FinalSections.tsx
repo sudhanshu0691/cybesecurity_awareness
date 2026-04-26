@@ -131,7 +131,7 @@ export function Footer() {
              © 2026 IIESP // INTERNATIONAL INSTITUTE OF EDUCATION & SKILL PROGRESS
            </p>
            <div className="flex items-center gap-4">
-              <span className="text-[9px] uppercase font-black text-govt-gold tracking-[0.3em]">Designed for sudhanshu singh</span>
+              <span className="text-[9px] uppercase font-black text-govt-gold tracking-[0.3em]">Designed by sudhanshu singh</span>
               <div className="w-2 h-2 organic-blob bg-govt-gold animate-pulse" />
            </div>
         </div>
